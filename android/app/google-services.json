@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "114723806569",
+    "project_id": "chatapp-4b6b4",
+    "storage_bucket": "chatapp-4b6b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114723806569:android:73a323cea9d70f123eb1f8",
+        "android_client_info": {
+          "package_name": "com.example.chtpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114723806569-rhvb8ldugmhh2dg190m8ktncr5qbhi02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-iejqNVBxU9LURl3eBhFWVb3oArel_48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114723806569-rhvb8ldugmhh2dg190m8ktncr5qbhi02.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "114723806569-bqkjg13r8igrai808ele8gbr8p4u1kgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ctpro"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114723806569:android:c509ff9af6f6f25c3eb1f8",
+        "android_client_info": {
+          "package_name": "com.example.ctpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114723806569-rhvb8ldugmhh2dg190m8ktncr5qbhi02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-iejqNVBxU9LURl3eBhFWVb3oArel_48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114723806569-rhvb8ldugmhh2dg190m8ktncr5qbhi02.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "114723806569-bqkjg13r8igrai808ele8gbr8p4u1kgg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ctpro"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
