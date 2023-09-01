@@ -1,31 +1,25 @@
 import 'package:chtpro/components/auth/auth_service.dart';
-import 'package:chtpro/components/auth/auth_service.dart';
-import 'package:chtpro/components/my_buttton.dart';
-import 'package:chtpro/components/my_text_field.dart';
+import 'package:chtpro/components/util/my_buttton.dart';
+import 'package:chtpro/components/util/my_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class RegisterPage extends StatefulWidget {
-  const RegisterPage({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
-  State<RegisterPage> createState() => _RegisterPageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _RegisterPageState extends State<RegisterPage> {
+class _LoginPageState extends State<LoginPage> {
   //text controller
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  final confirmPasswordController = TextEditingController();
-  //signUP method
-  void signUp() async {
-    if (passwordController.text != confirmPasswordController.text) {
-      ScaffoldMessenger.of(context)
-          .showSnackBar(const SnackBar(content: Text("password do not match")));
-      return;
-    }
-    //get auth service
+  //sign in user
+  void signIn() async {
+    //get the auth service
     final authService = Provider.of<AuthService>(context, listen: false);
+
     try {
       await authService.signInWithEmailandPassword(
         emailController.text,
@@ -41,15 +35,6 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade300,
-      appBar: AppBar(
-        leading: new IconButton(
-          icon: new Icon(Icons.arrow_back_ios, color: Colors.grey),
-          onPressed: () => Navigator.of(context).pop(),
-        ),
-        backgroundColor:
-            Colors.blue.withOpacity(0.0), //You can make this transparent
-        elevation: 0.0, //No shadow
-      ),
       body: SafeArea(
         child: Center(
           child: Padding(
@@ -94,17 +79,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 const SizedBox(
                   height: 50,
                 ),
-                //passwordconfirm textfield
-                MytextField(
-                    controller: confirmPasswordController,
-                    hintText: "pasword",
-                    obscureText: true),
-                const SizedBox(
-                  height: 50,
-                ),
 
                 //login button
-                MyButton(onTap: signUp, text: "create user"),
+                MyButton(onTap: signIn, text: "sign In"),
 
                 const SizedBox(
                   height: 50,
